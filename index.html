@@ -30,28 +30,31 @@
                     <fieldset>
                         <div class="leftlabels">
                             <label for="firstName">First Name:</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <input type="text" id="firstName" name="firstName" required>
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required>
                         </div>
                         <div class="rightlabels">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="lastName" name="lastName" required>
                             <label for="phoneNumber">Phone Number:</label>
-                            <input type="number" name="phoneNumber" id="phoneNumber">
+                            <input type="number" name="phoneNumber" id="phoneNumber" required>
                             <label for="confirmPassword">Confirm Password:</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </div>
-                    </fieldset>  
+                    </fieldset> 
+                    <div class="errorMessage">Fill out all fields above</div> 
+                    <br>
+                    <button type="submit">Create Account</button>
+                    <div class="logIn">
+                        <p>Already have an account? <a class="link" href="index.html">Log in</a>
+                        </p>
+                    </div>
                 </form>
-                <br>
-                <button type="submit">Create Account</button>
-                <div class="logIn">
-                <p>Already have an account? <a href="index.html">Log in</a>
-                </p>
-                </div>
+
     </div>
 </body>
+<script src="signup.js"></script>
 </html>

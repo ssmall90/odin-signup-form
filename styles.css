@@ -54,10 +54,26 @@ html body {
  label {
     display: block;
  }
+
  input {
     display: block;
     margin-bottom: 10px;
+    border: solid 2px #E5E7EB;
  }
+
+ input:valid {
+    border-color: #596D48;
+ }
+
+ input:invalid{
+    border-color: red;
+ }
+
+input:focus {
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
 
 fieldset {
     display: flex;
@@ -71,3 +87,40 @@ fieldset {
     margin-right: 100px;
 }
 
+button {
+    background-color: #596D48;
+    color: white;
+    border-radius: 7px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.logIn p {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.logIn a {
+    font-weight: 300;
+}
+
+.link {
+    color: black;
+}
+.link:hover {
+    color: #596D48;
+}
+
+.errorMessage {
+margin-top: 10px;
+margin-left: 10px;
+color: red;
+}
+
+.error {
+    border: 2px solid red;
+}
